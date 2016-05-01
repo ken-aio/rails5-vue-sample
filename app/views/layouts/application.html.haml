@@ -1,0 +1,10 @@
+!!! 5
+%html{lang: "ja"}
+  %head
+    %title RailsGulpBrowserifyVuejsApp
+    = stylesheet_link_tag    '/application.css', media: 'all'
+    = javascript_include_tag '/application.js'
+    = csrf_meta_tags
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css", :rel => "stylesheet"}/
+  %body{ class: "#{body_class}" }
+    = yield

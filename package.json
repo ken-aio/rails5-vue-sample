@@ -1,0 +1,36 @@
+{
+  "name": "rails-gulp-browserify-vuejs-app",
+  "version": "0.0.1",
+  "description": "Rails + Gulp + Browserify + Vue.js なデモアプリケーション",
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffeeify"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "materialize": {
+      "exports": "materialize"
+    }
+  },
+  "browser": {
+    "jquery": "./node_modules/jquery/dist/jquery.js",
+    "materialize": "./node_modules/materialize-css/bin/materialize.js"
+  },
+  "devDependencies": {
+    "browserify-shim": ">=3.4.1",
+    "browserify": ">=3.36.0",
+    "coffeeify": ">=0.6.0",
+    "gulp-changed": ">=0.3.0",
+    "gulp-notify": ">=1.2.4",
+    "gulp-sass": ">=0.7.1",
+    "gulp": ">=3.6.0",
+    "vinyl-source-stream": ">=0.1.1"
+  },
+  "dependencies": {
+    "jquery": ">=2.2.3",
+    "materialize-css": "^0.97.6",
+    "vue": ">=1.0.21"
+  }
+}

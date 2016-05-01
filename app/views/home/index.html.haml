@@ -1,0 +1,5 @@
+%div.todo
+  %h1 {{title | uppercase}}
+  %ul
+    %li(v-for='task in tasks' v-on:click='task.complete = !task.complete' class="{{task.complete ? 'is-complete' : ''}}")
+      {{task.content}}
